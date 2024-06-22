@@ -7,7 +7,7 @@
 .page.theme_dark {
 
     --main-font: "IBM Plex Mono";
-    --main-text-color: #353430;
+    --main-text-color: #F1B2CE;
     --background-color: #00183F;
     --title-text-color: #000028;
     --title-color: #DB00FF;
@@ -21,7 +21,7 @@
     --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
     --rec-visibility: visible;
     --btn-hover: #ff007040; 
-
+    --decorated-color: #FF0070
 }
 
 
@@ -29,7 +29,7 @@
   :root {
 
     --main-font: "IBM Plex Mono";
-    --main-text-color: #353430;
+    --main-text-color: #F1B2CE;
     --background-color: #00183F;
     --title-text-color: #000028;
     --title-color: #DB00FF;
@@ -43,6 +43,7 @@
     --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
     --rec-visibility: visible;
     --btn-hover: #ff007040; 
+    --decorated-color: #FF0070
   }
 }
 

@@ -61,8 +61,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-right: 1px solid var(--title-shadow);
-  border-top: 1px solid var(--title-shadow);
+  border-right: 1px solid var(--decorated-color);
+  border-top: 1px solid var(--decorated-color);
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
@@ -72,8 +72,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--title-shadow);
-  border-bottom: 1px solid var(--title-shadow);
+  border-left: 1px solid var(--decorated-color);
+  border-bottom: 1px solid var(--decorated-color);
   inset-block-end: 10px;
   inset-inline-start: 10px;
 }
@@ -81,7 +81,7 @@
  .header__theme-menu-button {
   text-transform: lowercase;
   border: none;
-  color: var(--title-shadow);
+  color: var(--decorated-color);
   line-height: 100%;
   background: none;
   cursor: pointer;
@@ -346,6 +346,16 @@
     text-align: center;
   }
 
+  .decorated-zone::after {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::before {
+    inset-block-end: 20px;
+  inset-inline-start: 20px;
+  }
+
 }
 
 @media (width >= 1024px) {
@@ -373,16 +383,20 @@
   .concentration {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-
-    
-   /* display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;*/
   }
 
   .concentration-title {
     grid-column-start: span 3;
+  }
+
+  .decorated-zone::after {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::before {
+    inset-block-end: 20px;
+  inset-inline-start: 20px;
   }
 }
   
