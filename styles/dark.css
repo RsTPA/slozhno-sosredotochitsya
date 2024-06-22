@@ -5,8 +5,45 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+
+    --main-font: "IBM Plex Mono";
+    --main-text-color: #353430;
+    --background-color: #00183F;
+    --title-text-color: #000028;
+    --title-color: #DB00FF;
+    --title-shadow: #FF0070;
+    --main-image: url(../images/cover-image-dark.png);
+    --white-color: #000028;
+    --title-text: var(--title-shadow);
+    --main-text: var(--main-text-color);
+    --main-title-text: var(--title-text-color);
+    --heading-title-text: var(--title-color);
+    --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+    --rec-visibility: visible;
+    --btn-hover: #ff007040; 
+
 }
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --main-font: "IBM Plex Mono";
+    --main-text-color: #353430;
+    --background-color: #00183F;
+    --title-text-color: #000028;
+    --title-color: #DB00FF;
+    --title-shadow: #FF0070;
+    --main-image: url(../images/cover-image-dark.png);
+    --white-color: #000028;
+    --title-text: var(--title-shadow);
+    --main-text: var(--main-text-color);
+    --main-title-text: var(--title-text-color);
+    --heading-title-text: var(--title-color);
+    --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+    --rec-visibility: visible;
+    --btn-hover: #ff007040; 
+  }
+}
+
+

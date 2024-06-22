@@ -3,12 +3,13 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
-  font-size: 18px;
-  background-image: var(--dark-image) no-repeat top center var(--title-text-color);
-  background-attachment: fixed;
-  font-weight: 400;
+  font-family: 'IBM Plex mono', monospace;
+  font-weight: normal;
+  background-color: var(--background-color, #FFF1F7);
+  background-image: var(--main-image);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
  .header {
@@ -35,6 +36,7 @@
   font-size: 18px;
   line-height: 139%;
   text-align: center;
+  visibility: var(--rec-visibility);
  }
 
  .header__rec::after {
@@ -47,6 +49,7 @@
   background-color: var(--title-shadow);
   border-right: 1px solid var(--title-shadow);
   border-top: 1px solid var(--title-shadow);
+  visibility: var(--rec-visibility);
  }
 
 .decorated-zone {
@@ -96,6 +99,10 @@
   border-bottom: 1px solid var(--title-shadow);
   outline: none;
  }
+
+ .header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--title-shadow);
+}
 
  .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.40);
@@ -154,7 +161,6 @@
  }
 
  .section__first-title{
-  margin-block-end: 20px;
   line-height: 130%;
   font-size: 18px;
   color: var(--main-text-color);
@@ -170,6 +176,7 @@
   padding-block-start: 10px;
   font-size: 18px;
   line-height: 130%;
+  color: var(--main-text-color);
 }
 
 .section__article-title {
@@ -177,6 +184,15 @@
   font-size: 18px;
   line-height: 130%;
   margin-block-start: 20px;
+}
+
+.section__article-title_regular {
+  margin-block-start: 20px;
+}
+
+.section__text-regular {
+  padding-block-start: 9px;
+  color: var(--main-text-color);
 }
 
  .section__article-list-title {
@@ -211,16 +227,13 @@
   outline: 1px solid var(--main-text-color);
  }
 
- .picture-title {
-  margin-bottom: 5px;
- }
-
  .image {
     display: block;
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
     object-position: center;
+    padding-block-start: 10px;
   }
 
  .footer {
@@ -270,6 +283,14 @@
     gap: 20px;
   }
 
+  .section__text {
+    padding-block-start: 10px;
+  }
+
+  .section__article-title {
+    margin-block-start: 20px;
+  }
+
   .concentration {
     display: grid;
     gap: 20px;
@@ -277,6 +298,7 @@
 
   .concentration-title {
     width: clamp(9.625rem, -20.5625rem + 62.8906vw, 19.6875rem);
+    
   }
 
   .gold-fish {
@@ -288,10 +310,6 @@
   .section__article-title {
     margin-block-start: 0;
   }
-
-  .picture-title {
-    margin-block-end: 20px;
-   }
 
   .all-pictures {
     display: grid;
@@ -320,7 +338,6 @@
 
   .footer {
     margin-block-start: 20px;
-    padding: 20px 20px;
     
   }
 
