@@ -92,20 +92,24 @@
 
 .header__theme-menu-button_active {
   outline: 1px solid;
+  outline-color: var(--border-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:focus {
   border-bottom: 1px solid var(--title-shadow);
   outline: none;
+  border: none;
 }
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--title-shadow);
+  border-color: var(--border-color);
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.4);
+  border-color: var(--border-color);
 }
 
 .header__theme-menu {

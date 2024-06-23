@@ -18,4 +18,5 @@
   --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   --rec-visibility: visible;
   --btn-hover: #ff007040;
+  --border-color: #ff0070;
 }

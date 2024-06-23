@@ -5,22 +5,23 @@
 */
 
 .page.theme_dark {
-  --main-font: "IBM Plex Mono";
-  --main-text-color: #f1b2ce;
-  --background-color: #00183f;
-  --title-text-color: #000028;
-  --title-color: #db00ff;
-  --title-shadow: #ff0070;
-  --main-image: url(../images/cover-image-dark.png);
-  --white-color: #000028;
-  --title-text: var(--title-shadow);
-  --main-text: var(--main-text-color);
-  --main-title-text: var(--title-text-color);
-  --heading-title-text: var(--title-color);
-  --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  --rec-visibility: visible;
-  --btn-hover: #ff007040;
-  --decorated-color: #ff0070;
+      --main-font: "IBM Plex Mono";
+      --main-text-color: #f1b2ce;
+      --background-color: #00183f;
+      --title-text-color: #000028;
+      --title-color: #db00ff;
+      --title-shadow: #ff0070;
+      --main-image: url(../images/cover-image-dark.png);
+      --white-color: #000028;
+      --title-text: var(--title-shadow);
+      --main-text: var(--main-text-color);
+      --main-title-text: var(--title-text-color);
+      --heading-title-text: var(--title-color);
+      --main-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+      --rec-visibility: visible;
+      --btn-hover: #ff007040;
+      --decorated-color: #ff0070;
+      --border-color: #FF0070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,5 +42,6 @@
       --rec-visibility: visible;
       --btn-hover: #ff007040;
       --decorated-color: #ff0070;
+      --border-color: #FF0070;
   }
 }
